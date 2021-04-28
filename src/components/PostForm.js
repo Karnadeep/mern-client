@@ -31,7 +31,7 @@ function PostForm({ updatePosts }) {
 
   function createPostCallback() {
     console.log('typeof() :>> ', typeof (values.body));
-    if (values.body.length == 0) {
+    if (values.body.length === 0) {
       alert('Body cannot be empty')
       return
     }

@@ -4,7 +4,6 @@ import { useMutation } from '@apollo/react-hooks'
 import { Button, Icon, Label } from 'semantic-ui-react'
 import gql from 'graphql-tag'
 import MyPopup from '../util/MyPopup'
-import { FETCH_POST_QUERY } from '../util/graphql'
 
 function LikeButton({ user, post: { id, likesCount, likes } }) {
     const [liked, setLiked] = useState(false)
